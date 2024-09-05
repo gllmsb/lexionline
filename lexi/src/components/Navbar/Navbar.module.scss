@@ -1,12 +1,18 @@
 @use '../../styles/variables' as *;
 
 .navbar {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: $primary;
     padding: 1.5rem;
+    margin: 0;
+    margin-left: -1.5rem;
     font-family: $karla;
+    font-weight: 300;
+    z-index: 1;
+    
     
     ul {
       display: flex;
@@ -15,7 +21,8 @@
       padding: 0;
   
       li {
-        margin-right: 1.5rem;
+        margin-right: 4rem;
+        text-align: center;
         padding: 0; 
         font-size: 1.5rem;
         
@@ -40,7 +47,8 @@
   
   .activeLink {
     text-decoration: underline !important;
-    color: $gray;
+    text-decoration-thickness: 1px !important; 
+    color: $fullwhite !important;
   }
   
   @media (max-width: 768px) {

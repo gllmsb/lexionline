@@ -1,0 +1,35 @@
+@use '../../styles/variables' as *;
+
+.circle {
+    position: absolute;
+    top: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+    background-color: $primary;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+
+    .backgroundCircle {
+        position: absolute;
+        left: 37%;
+        bottom: 1.2rem;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        background-color: $secondary; 
+        z-index: -1; 
+    }
+    
+    img {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        bottom: 2.1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 3;
+        filter: brightness(5);
+    }
+}

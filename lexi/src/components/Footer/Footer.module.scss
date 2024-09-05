@@ -1,0 +1,78 @@
+@use '../../styles/variables' as *;
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: $primary; 
+    border-top: 2px solid gray; 
+    font-family: $karma;
+}
+
+.column {
+    flex: 1;
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: $white;
+}
+
+.column h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: $white;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.column p {
+    margin: 0.25rem 0;
+    font-size: 1rem;
+    color: $white;
+}
+
+.column a {
+    color: $white; 
+    text-decoration: none;
+}
+
+.column a:hover {
+    text-decoration: underline;
+}
+
+.backgroundCircle {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    background-color: $secondary; 
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.bookImage {
+    position: absolute;
+    width: 60px; 
+    height: 60px; 
+    filter: brightness(5); 
+}
+
+.column:last-child {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.lexiconline {
+    font-size: 1.5rem; 
+    font-weight: 600; 
+    letter-spacing: 2px;
+    color: $white; 
+    margin-top: 1rem;
+    font-family: $marck;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}

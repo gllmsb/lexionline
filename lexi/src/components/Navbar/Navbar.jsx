@@ -1,11 +1,13 @@
 import { NavLink } from "react-router-dom";
 import styles from './Navbar.module.scss';
+import { Circle } from "../Circle/Circle";
 
 
 export const Navbar = () => {
 
     return(
         <>
+        <Circle/>   
             <nav className={styles.navbar}>
                 <ul>
                     <li>
