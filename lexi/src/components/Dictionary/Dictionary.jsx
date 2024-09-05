@@ -29,10 +29,10 @@ export const Dictionary = ({ query }) => {
                     console.log('Processed Meanings:', meanings);
 
                     setDefinitions(meanings);
-                    setError(null); // Clear error if fetch is successful
+                    setError(null); 
                 } catch (error) {
                     console.error('Error fetching definitions:', error.message);
-                    setDefinitions([]); // Clear definitions on error
+                    setDefinitions([]);
                     setError(error.message);
                 }
             };
