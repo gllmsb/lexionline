@@ -37,7 +37,6 @@ export const Dictionary = ({ query }) => {
     const renderDefinitions = (definitions) => (
         <div className={styles.meaningContent}>
             <div className={styles.definitions}>
-                <h4 className={styles.definitionHeader}>Definitions:</h4>
                 {definitions.slice(0, 3).map((def, i) => (
                     <div key={i} className={styles.definitionExample}>
                         <span className={styles.definitionText}>{def.definition}</span>
