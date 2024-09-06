@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import styles from './Dictionary.module.scss';
+import Audio from '../../assets/images/audio.png';
 
 export const Dictionary = ({ query }) => {
     const [definitions, setDefinitions] = useState([]);
@@ -79,7 +80,12 @@ export const Dictionary = ({ query }) => {
 
     return (
         <div className={styles.dictionary}>
-            {!error && query && <h3 className={styles.queryTitle}>{query}</h3>}
+            {!error && query && (
+                <div className={styles.header}>
+                    <img src={Audio} alt="Icon" className={styles.icon} />
+                    <h3 className={styles.queryTitle}>{query}</h3>
+                </div>
+            )}
             {error ? (
                 <div className={styles.error}>{error}</div>
             ) : (
