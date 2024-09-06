@@ -55,11 +55,13 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    gap: 1rem;
 }
 
 .definitions {
     flex: 2;
-    margin-right: 2rem; 
+    margin-right: 2rem;
+    overflow: hidden;
 }
 
 .examples {
@@ -71,13 +73,14 @@
 }
 
 .definitionText {
-    margin-bottom: 2rem; 
+    margin-bottom: 2rem;
 }
 
 .exampleHeader {
     font-size: 1.25rem;
     text-decoration: underline;
     margin-bottom: 1rem;
+    margin-top: -4rem;
 }
 
 .exampleList {
@@ -87,4 +90,23 @@
 
 .exampleList li {
     margin-bottom: 2rem;
+}
+
+.synonyms {
+    flex: 1; 
+    margin-top: 2rem;
+}
+
+.synonyms h4 {
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+.synonyms ul {
+    list-style-type: decimal;
+    margin-left: 1.5rem;
+}
+
+.synonyms ul li {
+    margin-bottom: 0.5rem;
 }

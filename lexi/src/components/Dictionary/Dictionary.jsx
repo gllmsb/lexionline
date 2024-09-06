@@ -37,6 +37,7 @@ export const Dictionary = ({ query }) => {
     const renderDefinitions = (definitions) => (
         <div className={styles.meaningContent}>
             <div className={styles.definitions}>
+                <h4 className={styles.definitionHeader}>Definitions:</h4>
                 {definitions.slice(0, 3).map((def, i) => (
                     <div key={i} className={styles.definitionExample}>
                         <span className={styles.definitionText}>{def.definition}</span>
@@ -64,9 +65,9 @@ export const Dictionary = ({ query }) => {
                     {renderDefinitions(meaning.definitions)}
                 </div>
                 {meaning.partOfSpeech === 'noun' && meaning.definitions[0].synonyms.length > 0 && (
-                    <div className={styles.examples}>
-                        <h4 className={styles.exampleHeader}>Synonyms:</h4>
-                        <ul className={styles.exampleList}>
+                    <div className={styles.synonyms}>
+                        <h4>Synonyms:</h4>
+                        <ul>
                             {meaning.definitions[0].synonyms.slice(0, 3).map((syn, i) => (
                                 <li key={i}>{syn}</li>
                             ))}
