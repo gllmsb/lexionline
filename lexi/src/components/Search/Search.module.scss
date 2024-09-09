@@ -59,3 +59,35 @@ h2 {
         background-color: $secondary;
     }
 }
+
+@media (max-width: 768px) {
+    .searchContainer {
+        width: 90%; 
+        padding-bottom: 1rem; 
+    }
+
+    h2 {
+        font-size: 2rem; 
+        padding-top: 1rem; 
+    }
+
+    .searchWrapper {
+        flex-direction: column; 
+        width: 100%; 
+    }
+
+    .searchInput {
+        border-radius: 40px; 
+        font-size: 0.9rem;
+        padding: 1rem;
+        border-right: none; 
+        margin-bottom: 0.5rem;
+    }
+
+    .searchButton {
+        border-radius: 40px; 
+        padding: 1rem;
+        font-size: 1.1rem; 
+        width: 100%; 
+    }
+}

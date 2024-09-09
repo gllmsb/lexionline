@@ -33,3 +33,9 @@
         filter: brightness(5);
     }
 }
+
+@media (max-width: 768px) {
+    .circle {
+        display: none;
+    }
+  }

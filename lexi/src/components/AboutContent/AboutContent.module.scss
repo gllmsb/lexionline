@@ -42,3 +42,23 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .contentWrapper {
+    padding: 1.5rem; 
+    margin: 1rem auto;
+    font-size: 1rem; 
+  }
+
+  p, ul {
+    font-size: 1rem; 
+  }
+
+  h2 {
+    font-size: 1.5rem; 
+  }
+
+  ul {
+    margin-left: 1rem; 
+  }
+}

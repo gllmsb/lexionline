@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     padding: 2rem;
+    margin-top: -5rem;
     background-color: $primary; 
     border-top: 2px solid gray; 
     font-family: $karma;
@@ -75,4 +76,43 @@
     margin-top: 1rem;
     font-family: $marck;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    .footer {
+        margin-top: -7rem;
+        flex-direction: column; 
+        align-items: center;
+        padding: 1rem; 
+    }
+
+    .column {
+        margin: 1rem 0;
+        align-items: center; 
+        text-align: center;
+    }
+
+    .column h4 {
+        font-size: 1.15rem; 
+    }
+
+    .column p {
+        font-size: 0.9rem; 
+    }
+
+    .backgroundCircle {
+        width: 70px; 
+        height: 70px;
+        margin-bottom: 0.5rem;
+    }
+
+    .bookImage {
+        width: 50px; 
+        height: 50px;
+    }
+
+    .lexiconline {
+        font-size: 1.25rem;
+        margin-top: 0.5rem;
+    }
 }
