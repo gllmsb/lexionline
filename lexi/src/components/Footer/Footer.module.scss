@@ -4,7 +4,6 @@
     display: flex;
     justify-content: space-between;
     padding: 2rem;
-    margin-top: -5rem;
     background-color: $primary; 
     border-top: 2px solid gray; 
     font-family: $karma;
@@ -80,7 +79,6 @@
 
 @media (max-width: 768px) {
     .footer {
-        margin-top: -7rem;
         flex-direction: column; 
         align-items: center;
         padding: 1rem; 
